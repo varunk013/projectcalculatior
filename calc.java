@@ -1,4 +1,4 @@
- class calc
+ class calc extends MathFunctions
 {
     public float Sum(int x,int y)
     {
@@ -22,11 +22,23 @@ class calculator
 {
     public static void main(String args[])
     {
+        float num1=10;
+        float num2=23;
     calc a = new calc();
-    System.out.println("Sum is:" +a.sum(2,6))
-    System.out.println("Difference is:" +a.diff(2,3))
-    System.out.println("Product is:" +a.prod(2,9))
-    System.out.println("Remainder is:" +a.div(2,7))
+    System.out.println("Sum is:" +a.Sum(2,6));
+    System.out.println("Difference is:" +a.Diff(2,3));
+    System.out.println("Product is:" +a.Prod(2,9));
+    System.out.println("Remainder is:" +a.Div(2,7));
+    double squre =a.squre(num1);
+    System.out.println("Squre of Number  is :" +squre);
+        
+    double cube =a.cube(num1);
+    System.out.println("Cube Number is :"+cube);
+    double module =a.module(num1,num2);
+    System.out.println("module of  Number is :"+module);
+    double power =a.power(num1,num2);
+    System.out.println("Power of Number is :"+power);
+
     
     }
 }
