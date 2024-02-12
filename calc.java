@@ -23,10 +23,10 @@ class calculator
     public static void main(String args[])
     {
     calc a = new calc();
-    System.out.println("Sum is:" +a.sum(2,6))
-    System.out.println("Difference is:" +a.diff(2,3))
-    System.out.println("Product is:" +a.prod(2,9))
-    System.out.println("Remainder is:" +a.div(2,7))
+    System.out.println("Sum is:" +a.Sum(2,6))
+    System.out.println("Difference is:" +a.Diff(2,3))
+    System.out.println("Product is:" +a.Prod(2,9))
+    System.out.println("Remainder is:" +a.Div(2,7))
     
     }
 }
